@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sam – Webentwickler</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="grain"></div>
+
+  <!-- Navigation -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">sam<span class="acc">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#leistungen">Leistungen</a></li>
+        <li><a href="#preise">Preise</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#ueber-mich">Über mich</a></li>
+        <li><a href="#kontakt" class="nav-cta">Kontakt</a></li>
+      </ul>
+      <button class="menu-toggle" aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#leistungen" class="mobile-link">Leistungen</a></li>
+      <li><a href="#preise" class="mobile-link">Preise</a></li>
+      <li><a href="#portfolio" class="mobile-link">Portfolio</a></li>
+      <li><a href="#ueber-mich" class="mobile-link">Über mich</a></li>
+      <li><a href="#kontakt" class="mobile-link">Kontakt</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="hero-inner">
+      <div class="hero-eyebrow reveal-in">
+        <span class="badge">Webentwickler aus Deutschland</span>
+        <div class="eyebrow-line"></div>
+      </div>
+      <h1 class="hero-name reveal-clip">
+        <span id="scrambleName">Sam</span><span class="acc">.</span>
+      </h1>
+      <div class="hero-foot">
+        <p class="hero-sub reveal-in" style="--d:.35s">
+          Ich entwickle Websites, die nicht nur<br>gut aussehen — sondern Ergebnisse liefern.
+        </p>
+        <div class="hero-cta reveal-in" style="--d:.48s">
+          <a href="#portfolio" class="btn-primary">Meine Projekte</a>
+          <a href="#kontakt" class="btn-ghost">Zusammenarbeiten →</a>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-track"><div class="scroll-fill"></div></div>
+    </div>
+  </section>
+
+  <!-- Leistungen -->
+  <section id="leistungen">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="s-num reveal-in">— 01</span>
+        <h2 class="reveal-up">Leistungen</h2>
+        <p class="s-desc reveal-up" style="--d:.1s">Alles aus einer Hand — von der Idee bis zum fertigen Produkt.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal-card" style="--cd:0s">
+          <span class="c-num">01</span>
+          <h3>Web Design</h3>
+          <p>Einzigartige Designs, die deine Besucher sofort begeistern und im Gedächtnis bleiben.</p>
+          <ul>
+            <li>UI/UX Design</li>
+            <li>Branding &amp; Identität</li>
+            <li>Prototyping</li>
+          </ul>
+        </div>
+        <div class="service-card reveal-card" style="--cd:.08s">
+          <span class="c-num">02</span>
+          <h3>Web Entwicklung</h3>
+          <p>Sauberer, performanter Code — schnelle Ladezeiten und keine Kompromisse bei der Qualität.</p>
+          <ul>
+            <li>Frontend Development</li>
+            <li>Responsive Websites</li>
+            <li>CMS-Integration</li>
+          </ul>
+        </div>
+        <div class="service-card reveal-card" style="--cd:.16s">
+          <span class="c-num">03</span>
+          <h3>SEO &amp; Performance</h3>
+          <p>Damit deine Website auch gefunden wird — und Besucher nicht nach 2 Sekunden abspringen.</p>
+          <ul>
+            <li>On-Page SEO</li>
+            <li>Core Web Vitals</li>
+            <li>Ladezeit-Optimierung</li>
+          </ul>
+        </div>
+        <div class="service-card reveal-card" style="--cd:.24s">
+          <span class="c-num">04</span>
+          <h3>Wartung &amp; Support</h3>
+          <p>Ich bin auch nach dem Launch für dich da — Updates, Anpassungen, und wenn mal was brennt.</p>
+          <ul>
+            <li>Regelmäßige Updates</li>
+            <li>Sicherheits-Monitoring</li>
+            <li>Schneller Support</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Preise -->
+  <section id="preise">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="s-num reveal-in">— 02</span>
+        <h2 class="reveal-up">Preise</h2>
+        <p class="s-desc reveal-up" style="--d:.1s">Kein Kleingedrucktes. Kein Rabatt-Trick. Nur klare Preise.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="pricing-card reveal-card" style="--cd:0s">
+          <div class="pc-top">
+            <span class="pc-label">Website</span>
+            <div class="pc-price">
+              <span class="p-from">ab</span>
+              <span class="p-num">799</span>
+              <span class="p-unit">€ einmalig</span>
+            </div>
+          </div>
+          <h3>Professionelle Website</h3>
+          <p>Individuelle, schnelle Website — fertig zum Selbst-Hosten oder als Grundlage für das Hosting-Add-on.</p>
+          <ul class="pc-features">
+            <li>Individuelles Design</li>
+            <li>Bis zu 5 Unterseiten</li>
+            <li>Responsives Design</li>
+            <li>Kontaktformular</li>
+            <li>Basis-SEO</li>
+            <li>30 Tage Support nach Launch</li>
+          </ul>
+          <a href="#kontakt" class="btn-primary">Anfragen →</a>
+        </div>
+
+        <div class="pricing-card pricing-addon reveal-card" style="--cd:.1s">
+          <div class="pc-top">
+            <span class="pc-label">Add-on</span>
+            <div class="pc-price">
+              <span class="p-from">ab</span>
+              <span class="p-num">19</span>
+              <span class="p-unit">€/Monat</span>
+            </div>
+          </div>
+          <h3>DSGVO-Hosting</h3>
+          <p>Kein Stress mit Servern, Datenschutz oder Zertifikaten — ich organisiere alles für dich.</p>
+          <ul class="pc-features">
+            <li>Hosting in Deutschland</li>
+            <li>SSL-Zertifikat inklusive</li>
+            <li>Automatische Backups</li>
+            <li>Domain-Verwaltung</li>
+          </ul>
+          <a href="#kontakt" class="btn-ghost">Dazu buchen →</a>
+        </div>
+      </div>
+
+      <p class="pricing-note reveal-in">Alle Preise sind Netto-Preise. Individuelle Projekte auf Anfrage — ich erstelle gerne ein persönliches Angebot.</p>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="s-num reveal-in">— 03</span>
+        <h2 class="reveal-up">Portfolio</h2>
+        <p class="s-desc reveal-up" style="--d:.1s">Einige Websites und Projekte, die ich entwickelt habe.</p>
+      </div>
+
+      <div class="portfolio-list">
+        <a href="https://miguelzimmermann.de" target="_blank" rel="noopener" class="p-item reveal-up" style="--d:0s">
+          <span class="p-num">01</span>
+          <div class="p-info">
+            <h3>Miguel Zimmermann</h3>
+            <p>Portfolio-Website für einen Fotografen — Portraits, Events &amp; kreative Fotografie</p>
+          </div>
+          <div class="p-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          <span class="p-arrow">→</span>
+        </a>
+        <div class="p-item reveal-up" style="--d:.08s">
+          <span class="p-num">02</span>
+          <div class="p-info">
+            <h3>Projekt Beta</h3>
+            <p>Online-Shop für ein lokales Unternehmen</p>
+          </div>
+          <div class="p-tags"><span>React</span><span>Node.js</span><span>Shopify</span></div>
+          <span class="p-arrow">→</span>
+        </div>
+        <div class="p-item reveal-up" style="--d:.16s">
+          <span class="p-num">03</span>
+          <div class="p-info">
+            <h3>Projekt Gamma</h3>
+            <p>Portfolio-Website für eine Fotografin</p>
+          </div>
+          <div class="p-tags"><span>Next.js</span><span>Tailwind</span><span>Framer</span></div>
+          <span class="p-arrow">→</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Über mich -->
+  <section id="ueber-mich">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="s-num reveal-in">— 04</span>
+        <h2 class="reveal-up">Über mich</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="about-lead reveal-up">Webentwickler mit einem Auge für gutes Design.</p>
+          <p class="reveal-up" style="--d:.1s">Ich glaube, dass eine Website mehr als nur eine digitale Visitenkarte sein sollte — sie soll eine Erfahrung sein, die im Gedächtnis bleibt.</p>
+          <p class="reveal-up" style="--d:.15s">Jedes Projekt bekommt von mir volle Aufmerksamkeit. Kein Template-Einheitsbrei, keine halbherzige Arbeit — sondern Websites, auf die du und deine Kunden wirklich stolz sind.</p>
+          <div class="skills-wrap reveal-up" style="--d:.2s">
+            <span>HTML &amp; CSS</span><span>JavaScript</span><span>React</span>
+            <span>Node.js</span><span>Figma</span><span>WordPress</span>
+            <span>SEO</span><span>Webflow</span>
+          </div>
+        </div>
+        <div class="about-right">
+          <div class="about-photo-wrap reveal-card" style="--cd:.08s">
+            <img src="images/sam.jpg" alt="Samuel Martens – Webentwickler" class="about-photo" loading="lazy">
+          </div>
+          <div class="about-stats reveal-card" style="--cd:.18s">
+            <div class="stat">
+              <span class="stat-n">20+</span>
+              <span class="stat-l">Projekte</span>
+            </div>
+            <div class="stat">
+              <span class="stat-n">100%</span>
+              <span class="stat-l">Zufriedene Kunden</span>
+            </div>
+            <div class="stat">
+              <span class="stat-n">3+</span>
+              <span class="stat-l">Jahre Erfahrung</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <section id="kontakt">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="s-num reveal-in">— 05</span>
+        <h2 class="reveal-up">Kontakt</h2>
+        <p class="s-desc reveal-up" style="--d:.1s">Du hast ein Projekt? Ich freue mich darüber zu hören.</p>
+      </div>
+
+      <form class="contact-form reveal-up" id="contactForm" style="--d:.15s">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Dein Name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email" placeholder="deine@email.de" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="subject">Betreff</label>
+          <input type="text" id="subject" name="subject" placeholder="Worum geht es?">
+        </div>
+        <div class="form-group">
+          <label for="message">Nachricht</label>
+          <textarea id="message" name="message" rows="5" placeholder="Erzähl mir von deinem Projekt..." required></textarea>
+        </div>
+        <button type="submit" class="btn-primary btn-submit">Nachricht senden →</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <span class="nav-logo">sam<span class="acc">.</span></span>
+      <p>Gemacht mit viel Kaffee &amp; Leidenschaft.</p>
+      <div class="footer-right">
+        <p class="footer-copy">© 2026 Sam. Alle Rechte vorbehalten.</p>
+        <nav class="footer-legal">
+          <a href="impressum.html">Impressum</a>
+          <a href="datenschutz.html">Datenschutz</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

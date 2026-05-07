@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impressum – Sam</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .legal-page { max-width: 720px; margin: 0 auto; padding: calc(var(--nav-h) + 80px) 32px 120px; }
+    .legal-page h1 { font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 48px; }
+    .legal-section { margin-bottom: 48px; border-top: 1px solid var(--border); padding-top: 24px; }
+    .legal-section h2 { font-size: 1rem; margin-bottom: 16px; letter-spacing: -.01em; }
+    .legal-section p, .legal-section address { font-size: .9rem; color: var(--muted); line-height: 1.85; font-style: normal; }
+    .legal-section a { color: var(--acc); transition: opacity .2s; }
+    .legal-section a:hover { opacity: .75; }
+    .back-link { display: inline-flex; align-items: center; gap: 8px; font-family: 'Fira Mono', monospace; font-size: .72rem; color: var(--muted); letter-spacing: .06em; margin-bottom: 48px; transition: color .2s; }
+    .back-link:hover { color: var(--text); }
+    @media (max-width: 600px) { .legal-page { padding-left: 20px; padding-right: 20px; } }
+  </style>
+</head>
+<body>
+  <div class="grain"></div>
+
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">sam<span class="acc">.</span></a>
+    </div>
+  </nav>
+
+  <main class="legal-page">
+    <a href="index.html" class="back-link">← Zurück zur Startseite</a>
+    <h1>Impressum</h1>
+
+    <div class="legal-section">
+      <h2>Angaben gemäß § 5 TMG</h2>
+      <address>
+        Samuel Martens<br>
+        Platanenring 12<br>
+        32339 Espelkamp<br>
+        Deutschland
+      </address>
+    </div>
+
+    <div class="legal-section">
+      <h2>Kontakt</h2>
+      <p>E-Mail: <a href="mailto:samuelmartens1707@gmail.com">samuelmartens1707@gmail.com</a></p>
+    </div>
+
+    <div class="legal-section">
+      <h2>Berufsbezeichnung</h2>
+      <p>Freiberuflicher Webentwickler</p>
+    </div>
+
+    <div class="legal-section">
+      <h2>Umsatzsteuer-Identifikationsnummer</h2>
+      <p>
+        Eine Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG liegt derzeit nicht vor.<br>
+        <!-- Sobald vorhanden ergänzen: USt-IdNr.: DE... -->
+      </p>
+    </div>
+
+    <div class="legal-section">
+      <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
+      <address>
+        Samuel Martens<br>
+        Platanenring 12<br>
+        32339 Espelkamp
+      </address>
+    </div>
+
+    <div class="legal-section">
+      <h2>Haftung für Inhalte</h2>
+      <p>
+        Als Diensteanbieter bin ich gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG bin ich als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
+      </p>
+    </div>
+
+    <div class="legal-section">
+      <h2>Haftung für Links</h2>
+      <p>
+        Mein Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte ich keinen Einfluss habe. Deshalb kann ich für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.
+      </p>
+    </div>
+
+    <div class="legal-section">
+      <h2>Urheberrecht</h2>
+      <p>
+        Die durch den Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <span class="nav-logo">sam<span class="acc">.</span></span>
+      <div class="footer-right">
+        <p class="footer-copy">© 2026 Sam. Alle Rechte vorbehalten.</p>
+        <nav class="footer-legal">
+          <a href="impressum.html">Impressum</a>
+          <a href="datenschutz.html">Datenschutz</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 20), { passive: true });
+  </script>
+</body>
+</html>
